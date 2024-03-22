@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>QuickBookings</title>
+    <link rel="icon" href="cinema.png">
+    <link rel="stylesheet" href="Home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <img class="bw" src="images/blackwp1.jpeg" width="100%">
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="cinema.png" width="40px"> 
+                <a  href="#" class="logo">Quick<span>Bookings</span></a>
+            </div>
+                 
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="newlogin.html">Logout</a></li>
+            </ul>
+           <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+           </div>
+        </nav>
+    </header>
+
+    <div class="Home">
+        <h1><span>N</span>ow <span>S</span>howing</h1>
+
+        <div class="videos">
+            <div class="Kaththi">
+                <video controls height="200px" width="400px" loop autoplay muted>
+                    <source src="videos/Kaththi1.mp4" type="video/mp4">
+                </video> 
+    
+            </div>
+    
+            <div class="Master">
+                <video controls height="200px" width="400px" loop autoplay muted>
+                    <source src="videos/Master1.mp4" type="video/mp4" >
+                </video> 
+    
+            </div>
+    
+            <div class="Mersal">
+                <video controls height="200px" width="400px" loop autoplay muted>
+                    <source src="videos/Mersal.mp4" type="video/mp4">
+                </video> 
+    
+            </div>
+        </div>
+        
+    </div>
+   
+</body>
+
+<script src="section.js">
+    
+</script>
+
+<script>
+    const menu = document.querySelector('.menu')
+    const menulist = document.querySelector('nav ul')
+    menu.addEventListener('click', ()=>{
+        menulist.classList.toggle('showmenu')
+    })
+
+</script>
+
+</html>

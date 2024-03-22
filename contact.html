@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="cinema.png" width="40px"> 
+                <a  href="#" class="logo">Quick<span>Bookings</span></a>
+            </div>
+                 
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+           <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+           </div>
+        </nav>
+    </header>
+
+        <form action="moviebook.php" method="post">
+
+            <h1>Contact</h1>
+            <label for="">Name</label for=""> 
+                <input type="text" name="name"> 
+            <label for="">Ph.No</label for=""> 
+                <input type="int" name="phno">
+            <label for="">Mail ID</label for=""> 
+                <input type="text" name="email">
+            <label for="">Message </label for=""> 
+                <input type="text" name="message">
+    
+            <button type="submit" value="submit">submit</button>
+        </form>
+
+    </body>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const menulist = document.querySelector('nav ul')
+        menu.addEventListener('click', ()=>{
+            menulist.classList.toggle('showmenu')
+        })
+    </script>
+
+    <footer>
+    
+        <div class="alldetails">
+           
+            <div class="support">
+                <h3>Support services (24x7)</h3>
+        
+                <a href=  "support@quickbookings.com" > <i class='bx bxl-gmail' style="color: red;"></i> support@quickbookings.com </a> <br>
+                <a href= "+91 9876543210"><i class='bx bx-phone-call' style="color: red;"></i>+91 9876543210</a>
+            </div>
+  
+            <div class="owners">
+                <h3>Event organisers want to sell tickets</h3>
+                <a href=  "sell@quickbookings.com" > <i class='bx bxl-gmail' style="color: red;"></i> sell@quickbookings.com </a> <br>
+            </div>
+        
+            <div class="advertise">
+                <h3>To advertise in the site</h3>
+                <a href=  "advertise@quickbookings.com" > <i class='bx bxl-gmail' style="color: red;"></i> advertise@quickbookings.com </a> <br>
+            </div>
+
+        </div>
+    </footer>
+
+</html>

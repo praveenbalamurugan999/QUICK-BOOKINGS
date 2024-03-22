@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Booking.css">
+        <title>Document</title>
+    </head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="logo">
+                <img src="cinema.png" width="40px"> 
+                <a  href="#" class="logo">Quick<span>Bookings</span></a>
+            </div>
+                
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+           <div class="menu">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+           </div>
+        </nav>
+    </header>
+
+    <h3><span>B</span>OOKINGS <span>O</span>PEN</h3>
+
+    <div class="containers">
+        <div class="container">
+            <img src="images/kaththi.jpg" class="image">
+            <div class="overlay">
+                <h1>Kaththi</h1>
+                <h2>A case of mistaken identity embroils an escaped convict in a fight against a large corporation intent on seizing a village's land.</h2>
+                <a href="Kaththi.html">
+                    <button>Book Now</button>
+                </a>
+            </div>  
+        </div>
+
+        <div class="container1">
+            <img src="images/master.jpg" class="image">
+            <div class="overlay">
+                <h1>Master</h1>
+                <h2>An alcoholic professor is sent to a juvenile school, where he clashes with a gangster who uses the school children for criminal activities.</h2>
+                <a href="Master.html">
+                    <button>Book Now</button>
+                </a>
+            </div>  
+        </div>
+
+        <div class="container2">
+            <img src="images/mersal.jpg" class="image">
+            <div class="overlay">
+                <h1>Mersal</h1>
+                <h2>A police officer arrests a doctor for crimes targeting medical professionals but later finds the real culprit in a tale of revenge, corruption and magic</h2>
+                <a href="Mersal.html">
+                    <button>Book Now</button>
+                </a>
+            </div>  
+        </div>
+
+    </div>
+    
+</body>
+
+<script>
+    const menu = document.querySelector('.menu')
+    const menulist = document.querySelector('nav ul')
+    menu.addEventListener('click', ()=>{
+        menulist.classList.toggle('showmenu')
+    })
+</script>
+
+</html>
