@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBookings — Mersal</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a href="Home.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 9.5V7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2.5a2.5 2.5 0 0 0 0 5V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2.5a2.5 2.5 0 0 0 0-5z"/><path d="M15 6.5v11" stroke-dasharray="1.5 2"/></svg></span><span class="brand-name">Quick<i>Bookings</i></span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Booking.html" class="active">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="logout" onclick="localStorage.removeItem('loggedIn')">Logout</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page">
+    <section class="seat-banner">
+      <img class="bg" src="img/Mersal2.jpg" alt="" />
+      <div class="inner wrap">
+        <img class="poster" src="images/mersal.jpg" alt="Mersal poster" />
+        <div>
+          <h1>Mersal</h1>
+          <div class="bmeta"><span><span class="star">★</span> 7.7</span><span>Action · Thriller · 2017 · 2h 52m</span></div>
+        </div>
+        <a href="Booking.html" class="btn btn-ghost seat-back">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+          Back
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap seat-layout">
+      <div class="seat-main">
+        <div class="showtimes">
+        <span class="pill"><input type="radio" name="date" id="d1" checked/><label for="d1"><span class="d">Sun</span>11</label></span>
+        <span class="pill"><input type="radio" name="date" id="d2" /><label for="d2"><span class="d">Mon</span>12</label></span>
+        <span class="pill"><input type="radio" name="date" id="d3" /><label for="d3"><span class="d">Tue</span>13</label></span>
+        <span class="pill"><input type="radio" name="date" id="d4" /><label for="d4"><span class="d">Wed</span>14</label></span>
+        <span class="pill"><input type="radio" name="date" id="d5" /><label for="d5"><span class="d">Thu</span>15</label></span>
+        <span class="pill"><input type="radio" name="date" id="d6" /><label for="d6"><span class="d">Fri</span>16</label></span>
+        <span class="pill"><input type="radio" name="date" id="d7" /><label for="d7"><span class="d">Sat</span>17</label></span>
+        </div>
+        <div class="showtimes" style="margin-bottom:16px">
+        <span class="pill"><input type="radio" name="time" id="t1" checked/><label for="t1">11:00</label></span>
+        <span class="pill"><input type="radio" name="time" id="t2" /><label for="t2">14:30</label></span>
+        <span class="pill"><input type="radio" name="time" id="t3" /><label for="t3">18:00</label></span>
+        <span class="pill"><input type="radio" name="time" id="t4" /><label for="t4">21:30</label></span>
+        </div>
+
+        <div class="screen-wrap">
+          <div class="screen"></div>
+          <div class="screen-label">All eyes this way · Screen</div>
+        </div>
+
+        <div class="all-seats" data-price="150"></div>
+
+        <div class="legend">
+          <span><i class="av"></i> Available</span>
+          <span><i class="se"></i> Selected</span>
+          <span><i class="bo"></i> Booked</span>
+        </div>
+      </div>
+
+      <aside class="summary" data-movie="Mersal">
+        <h3>Your Booking</h3>
+        <div class="row"><span>Movie</span><span>Mersal</span></div>
+        <div class="row"><span>Date</span><span id="sumDate">Sun 11</span></div>
+        <div class="row"><span>Time</span><span id="sumTime">11:00</span></div>
+        <div class="row"><span>Seats</span><span class="seats-pick"><span class="count">0</span> selected</span></div>
+        <div class="total"><span>Total Payable</span><b><small>₹</small><span class="amount">0</span></b></div>
+        <button type="button" class="btn btn-primary btn-block" onclick="bookSeats()">Confirm Booking
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+        </button>
+      </aside>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="popup.js"></script>
+  <script src="seats.js"></script>
+</body>
+</html>

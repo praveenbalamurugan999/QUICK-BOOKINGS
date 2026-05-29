@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBookings — Sign in</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="auth">
+    <!-- cinematic side -->
+    <section class="auth-visual">
+      <div class="posters">
+        <img src="images/kaththi.jpg" alt="" />
+        <img src="images/master.jpg" alt="" />
+        <img src="images/mersal.jpg" alt="" />
+      </div>
+
+      <div class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 9.5V7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2.5a2.5 2.5 0 0 0 0 5V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2.5a2.5 2.5 0 0 0 0-5z"/><path d="M15 6.5v11" stroke-dasharray="1.5 2"/></svg></span><span class="brand-name">Quick<i>Bookings</i></span></div>
+
+      <div class="auth-tag">
+        <span class="eyebrow">Premium Cinema Experience</span>
+        <h1>Book the best seats in the house</h1>
+        <p>Browse now-showing films, choose your seats on an interactive map, and lock in your tickets in seconds.</p>
+      </div>
+
+      <div class="auth-meta">
+        <div><b>03</b>Now Showing</div>
+        <div><b>4K</b>Dolby Vision</div>
+        <div><b>24/7</b>Instant Booking</div>
+      </div>
+    </section>
+
+    <!-- form side -->
+    <section class="auth-panel">
+      <div class="auth-card">
+        <div class="switch">
+          <button id="tab-signin" class="active" type="button">Sign in</button>
+          <button id="tab-signup" type="button">Sign up</button>
+        </div>
+
+        <form class="auth-form active" id="signinForm" onsubmit="return false">
+          <h2>Welcome back</h2>
+          <p class="sub">Sign in to continue to your bookings.</p>
+          <div class="field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <input type="email" id="email" placeholder="Email address" required />
+          </div>
+          <div class="field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <input type="password" id="pwd" placeholder="Password" required />
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="checkData()">Sign in
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+
+        <form class="auth-form" id="signupForm" onsubmit="return false">
+          <h2>Create account</h2>
+          <p class="sub">Join QuickBookings — it only takes a moment.</p>
+          <div class="field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            <input type="text" id="name" placeholder="Username" required />
+          </div>
+          <div class="field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <input type="email" id="emailid" placeholder="Email address" required />
+          </div>
+          <div class="field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <input type="password" id="passwd" placeholder="Password" required />
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="addData()">Create account
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

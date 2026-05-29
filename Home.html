@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBookings — Now Showing</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a href="Home.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 9.5V7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2.5a2.5 2.5 0 0 0 0 5V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2.5a2.5 2.5 0 0 0 0-5z"/><path d="M15 6.5v11" stroke-dasharray="1.5 2"/></svg></span><span class="brand-name">Quick<i>Bookings</i></span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="Home.html" class="active">Home</a></li>
+          <li><a href="Booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="logout" onclick="localStorage.removeItem('loggedIn')">Logout</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page">
+    <!-- HERO: featured film with ambient trailer -->
+    <section class="hero">
+      <video class="hero-vid" autoplay muted loop playsinline poster="img/master2nd.jpg">
+        <source src="videos/Master1.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-inner wrap">
+        <span class="tag">Featured · Now Showing</span>
+        <h1>Master</h1>
+        <div class="meta">
+          <span class="chip"><span class="star">★</span> 7.3</span>
+          <span class="chip">2021</span>
+          <span class="chip">Action · Drama</span>
+          <span class="chip">2h 59m</span>
+          <span class="chip">UA</span>
+        </div>
+        <p class="synopsis">An alcoholic professor is sent to a juvenile school, where he clashes with a ruthless gangster exploiting the children for his crimes.</p>
+        <div class="hero-cta">
+          <a href="Master.html" class="btn btn-primary">Book Tickets
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="Booking.html" class="btn btn-ghost">All Movies</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOW SHOWING -->
+    <section class="section wrap">
+      <div class="sec-head">
+        <span class="eyebrow">In Cinemas</span>
+        <h2>Now <span class="grad-text">Showing</span></h2>
+        <p>Pick a film, choose your seats and book instantly.</p>
+      </div>
+
+      <div class="movies-grid">
+        <article class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-rating"><span class="star">★</span> 8.0</span>
+            <img src="images/kaththi.jpg" alt="Kaththi poster" />
+          </div>
+          <div class="movie-body">
+            <h3>Kaththi</h3>
+            <div class="movie-genre">Action · Thriller · 2014</div>
+            <div class="movie-foot">
+              <div class="movie-price">From<b>₹200</b></div>
+              <a href="Kaththi.html" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-rating"><span class="star">★</span> 7.3</span>
+            <img src="images/master.jpg" alt="Master poster" />
+          </div>
+          <div class="movie-body">
+            <h3>Master</h3>
+            <div class="movie-genre">Action · Drama · 2021</div>
+            <div class="movie-foot">
+              <div class="movie-price">From<b>₹250</b></div>
+              <a href="Master.html" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-rating"><span class="star">★</span> 7.7</span>
+            <img src="images/mersal.jpg" alt="Mersal poster" />
+          </div>
+          <div class="movie-body">
+            <h3>Mersal</h3>
+            <div class="movie-genre">Action · Thriller · 2017</div>
+            <div class="movie-foot">
+              <div class="movie-price">From<b>₹150</b></div>
+              <a href="Mersal.html" class="btn btn-primary">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBookings — Bookings Open</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a href="Home.html" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 9.5V7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2.5a2.5 2.5 0 0 0 0 5V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-2.5a2.5 2.5 0 0 0 0-5z"/><path d="M15 6.5v11" stroke-dasharray="1.5 2"/></svg></span><span class="brand-name">Quick<i>Bookings</i></span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Booking.html" class="active">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="logout" onclick="localStorage.removeItem('loggedIn')">Logout</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page">
+    <section class="section wrap booking-page">
+      <div class="sec-head">
+        <span class="eyebrow">Bookings Open</span>
+        <h2>Pick Your <span class="grad-text">Movie</span></h2>
+        <p>Three blockbusters playing this week. Select one to choose seats and showtimes.</p>
+      </div>
+
+      <div class="movies-grid booking-grid">
+        <article class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-rating"><span class="star">★</span> 8.0</span>
+            <img src="img/kaththi.jpg" alt="Kaththi" />
+          </div>
+          <div class="movie-body">
+            <h3>Kaththi</h3>
+            <div class="movie-genre">Action · Thriller · 2014 · 2h 41m</div>
+            <p class="movie-desc">A case of mistaken identity embroils an escaped convict in a fight against a powerful corporation intent on seizing a village's land.</p>
+            <div class="movie-foot">
+              <div class="movie-price">From<b>₹200</b></div>
+              <a href="Kaththi.html" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-rating"><span class="star">★</span> 7.3</span>
+            <img src="img/master2nd.jpg" alt="Master" />
+          </div>
+          <div class="movie-body">
+            <h3>Master</h3>
+            <div class="movie-genre">Action · Drama · 2021 · 2h 59m</div>
+            <p class="movie-desc">An alcoholic professor is sent to a juvenile school, where he clashes with a ruthless gangster who exploits the children for his criminal operations.</p>
+            <div class="movie-foot">
+              <div class="movie-price">From<b>₹250</b></div>
+              <a href="Master.html" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <div class="movie-poster">
+            <span class="movie-rating"><span class="star">★</span> 7.7</span>
+            <img src="img/Mersal2.jpg" alt="Mersal" />
+          </div>
+          <div class="movie-body">
+            <h3>Mersal</h3>
+            <div class="movie-genre">Action · Thriller · 2017 · 2h 52m</div>
+            <p class="movie-desc">A magician, a doctor and a vigilante are linked in a gripping tale of revenge against corruption in the medical world.</p>
+            <div class="movie-foot">
+              <div class="movie-price">From<b>₹150</b></div>
+              <a href="Mersal.html" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
